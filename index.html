@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lawrence Design Portfolio</title>
+    <meta
+      name="description"
+      content="Sleek, professional, and state-of-the-art design portfolio by Lawrence."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap & Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3"
+      id="siteNav"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-semibold brand" href="#home">Mwangi Ngugi</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#home">Intro</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="btn btn-brand btn-sm px-3" href="#contact"
+                >Let’s work</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="hero d-flex align-items-center">
+      <div class="container text-center">
+        <div class="mx-auto hero-inner reveal">
+          <h1 class="display-4 fw-bold mb-3">Hi, I’m Lawrence</h1>
+          <p class="lead mx-auto mb-4">
+            I create sleek, professional, and state-of-the-art designs that make
+            brands stand out.
+          </p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#gallery" class="btn btn-brand btn-lg">View Gallery</a>
+            <a href="#services" class="btn btn-outline-brand btn-lg"
+              >Services</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <h2 class="section-title">Services</h2>
+          <p class="text-secondary mb-0">
+            Focused, high-impact design solutions.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 reveal">
+            <div class="card card-hover h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="icon-wrap mb-3"><i class="bi bi-palette2"></i></div>
+                <h5 class="fw-semibold mb-2">Graphic Design</h5>
+                <p class="mb-0">
+                  Campaign visuals, posters, social media assets crafted for
+                  clarity and impact.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal">
+            <div class="card card-hover h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="icon-wrap mb-3"><i class="bi bi-window"></i></div>
+                <h5 class="fw-semibold mb-2">Web Design</h5>
+                <p class="mb-0">
+                  Responsive, conversion-friendly websites with clean UX and
+                  modern polish.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal">
+            <div class="card card-hover h-100 border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <div class="icon-wrap mb-3"><i class="bi bi-bezier2"></i></div>
+                <h5 class="fw-semibold mb-2">Brand Identity</h5>
+                <p class="mb-0">
+                  Logos, color systems, and guidelines for consistent, memorable
+                  brands.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div
+          class="d-flex align-items-end justify-content-between mb-4 flex-wrap gap-3 reveal"
+        >
+          <div>
+            <h2 class="section-title mb-1">Gallery</h2>
+            <p class="text-secondary mb-0">A selection of recent work.</p>
+          </div>
+          <a href="#contact" class="btn btn-outline-brand">Start a project</a>
+        </div>
+
+        <div class="row g-3">
+          <!-- Replace src with your images in /img -->
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project1.jpg"
+              data-alt="Project 1"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project1.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Project 1"
+                />
+                <figcaption>Project 1</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project2.jpg"
+              data-alt="Project 2"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project2.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Project 2"
+                />
+                <figcaption>Project 2</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project3.jpg"
+              data-alt="Project 3"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project3.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Project 3"
+                />
+                <figcaption>Project 3</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project4.jpg"
+              data-alt="Project 4"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project4.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Project 4"
+                />
+                <figcaption>Project 4</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project6.jpg"
+              data-alt="Project 5"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project6.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Project 5"
+                />
+                <figcaption>Project 5</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project5.jpg"
+              data-alt="Project 6"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project5.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Project 6"
+                />
+                <figcaption>Project 6</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project7.jpg"
+              data-alt="Project 7"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project7.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Project 7"
+                />
+                <figcaption>Project 7</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project8.jpg"
+              data-alt="Project 8"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project8.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Project 8"
+                />
+                <figcaption>Project 8</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project9.png"
+              data-alt="Project 9"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project9.png"
+                  class="img-fluid rounded-3"
+                  alt="Project 3"
+                />
+                <figcaption>Project 9</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project10.png"
+              data-alt="Project 10"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project10.png"
+                  class="img-fluid rounded-3"
+                  alt="Project 10"
+                />
+                <figcaption>Project 10</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project11.png"
+              data-alt="Project 11"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project11.png"
+                  class="img-fluid rounded-3"
+                  alt="Project 11"
+                />
+                <figcaption>Project 11</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 reveal">
+            <a
+              href="#"
+              class="gallery-link"
+              data-img="images/project12.jpg"
+              data-alt="Project 12"
+            >
+              <figure class="gallery-card">
+                <img
+                  loading="lazy"
+                  src="images/project12.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Project 12"
+                />
+                <figcaption>Project 12</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="section section-sm bg-soft">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-8 reveal">
+            <h3 class="mb-2">Let’s build something great</h3>
+            <p class="mb-0 text-secondary">
+              Email:
+              <a
+                class="link-underline link-underline-opacity-0"
+                href="mailto:lawrencengugi90@gmail.com"
+                >lawrencengugi90@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end reveal">
+            <a href="#gallery" class="btn btn-brand">See more work</a>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div
+          class="d-flex justify-content-between flex-wrap gap-2 small text-secondary"
+        >
+          <span>© <span id="year"></span> Lawrence. All rights reserved.</span>
+          <span>
+            <a class="me-3 text-secondary" href="#" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a class="me-3 text-secondary" href="#" aria-label="Dribbble"
+              ><i class="bi bi-dribbble"></i
+            ></a>
+            <a class="text-secondary" href="#" aria-label="Behance"
+              ><i class="bi bi-behance"></i
+            ></a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 bg-transparent">
+          <button
+            type="button"
+            class="btn-close ms-auto p-3 text-white"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body text-center position-relative">
+            <button
+              id="prevBtn"
+              class="btn btn-light position-absolute top-50 start-0 translate-middle-y"
+            >
+              &#10094;
+              <!-- Left arrow -->
+            </button>
+            <img id="lightboxImg" class="img-fluid rounded-3" src="" alt="" />
+            <button
+              id="nextBtn"
+              class="btn btn-light position-absolute top-50 end-0 translate-middle-y"
+            >
+              &#10095;
+              <!-- Right arrow -->
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      // Auto-close navbar on outside click or link click
+      document.addEventListener("click", function (event) {
+        const navbar = document.querySelector(".navbar-collapse");
+        if (
+          navbar.classList.contains("show") &&
+          !navbar.contains(event.target) &&
+          !event.target.classList.contains("navbar-toggler")
+        ) {
+          new bootstrap.Collapse(navbar).toggle();
+        }
+      });
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          const navbar = document.querySelector(".navbar-collapse");
+          if (navbar.classList.contains("show")) {
+            new bootstrap.Collapse(navbar).toggle();
+          }
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
