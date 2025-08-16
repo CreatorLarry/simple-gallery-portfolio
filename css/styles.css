@@ -219,3 +219,13 @@ footer {
 hr {
   border-top: 1px solid var(--border);
 }
+
+.overlay {
+  transition: opacity 0.3s ease;
+}
+.hover-opacity-100:hover {
+  opacity: 1 !important;
+}
+.overlay:hover {
+  opacity: 0.8;
+}
