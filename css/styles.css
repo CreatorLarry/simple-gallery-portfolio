@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
 /* ====== Theme: Custom Colors & Typography ====== */
 :root {
   /* Brand palette (tweak these to your taste) */
@@ -228,4 +228,31 @@ hr {
 }
 .overlay:hover {
   opacity: 0.8;
+}
+
+#testimonials h2 {
+  color: var(--bs-primary);
+}
+
+#testimonials .card {
+  transition: transform 0.3s ease;
+}
+#testimonials .card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--brand-100); /* matches your theme */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures proper fill */
+  display: block;
 }
