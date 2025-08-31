@@ -256,3 +256,11 @@ hr {
   object-fit: cover; /* ensures proper fill */
   display: block;
 }
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-toggler{
+    border: none;
+}
